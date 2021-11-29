@@ -1,7 +1,5 @@
-import react, { useContext } from 'react'
-import { useLanguage, useLanguageUpdate } from '../../contexts/language'
+import { useLanguage } from '../../contexts/language'
 import './home.css'
-import { LanguageContext } from '../../contexts/language'
 
 const contentEN = {
 	hello: "Hi I'm",
@@ -17,7 +15,6 @@ const contentFR = {
 
 const Home = () => {
 	const language = useLanguage()
-	const toggleLanguage = useLanguageUpdate()
 
 	const content = language === 'EN' ? contentEN : contentFR
 	return (
