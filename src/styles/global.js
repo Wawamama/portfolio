@@ -11,6 +11,7 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
   }
   body {
+    position: relative;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -82,7 +83,7 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.textSecondary};
   }
   .toggleLangBtn {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 2rem;
     padding: 2rem 1rem;
