@@ -38,6 +38,22 @@ export const GlobalStyles = createGlobalStyle`
   }
   button {
     display: block;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: ${({ theme }) => theme.bgContactBtn};
+    color: ${({ theme }) => theme.text};
+    border: solid 3px;
+    border-color: ${({ theme }) => theme.text};
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+  button:hover {
+    background-color: ${({ theme }) => theme.body};
+    color: ${({ theme }) => theme.link};
   }
   a {
     color: ${({ theme }) => theme.link};
@@ -49,6 +65,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   h1.marion {
     font-size: 4rem;
+    margin: 0.5rem 0;
     background: #1597E5;
     background: -webkit-linear-gradient(to bottom right, #1597E5 27%, #69DADB 53%, #1597E5 85%);
     background: -moz-linear-gradient(to bottom right, #1597E5 27%, #69DADB 53%, #1597E5 85%);
@@ -61,6 +78,7 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.text};
   }
   h2 {
+    font-size: 2.2rem;
     color: ${({ theme }) => theme.textSecondary};
   }
   .toggleLangBtn {

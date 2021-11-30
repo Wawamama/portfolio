@@ -1,28 +1,41 @@
+import { NavLink } from 'react-router-dom'
 import { useLanguage } from '../../contexts/language'
 import './home.css'
 
 const contentEN = {
 	hello: "Hi I'm",
-	text: 'I’m a fullstack web developer specialized in React and NodeJS. I also like to tell jokes on stage, play poker and hike in the mountains. I’m a very curious person and I am always looking for new opportunities.',
+	text: `I’m a fullstack web developer specialized in React and NodeJS. \n
+	I also like to tell jokes on stage, play poker and hike in the mountains.\n
+	I’m a very curious person and I am always looking for new opportunities.`,
 	h2: 'I use code to turn awesome projects into web applications',
+	button: "Let's talk",
 }
 
 const contentFR = {
 	hello: 'Bonjour, je suis',
-	text: "Je suis une developpeuse fullstack spécialisée en React et NodeJS. J'aime aussi raconter des blagues sur scène, jouer aux cartes et marcher dans la montagne. Je suis curieuse de nature et toujours à la recherche de nouveaux challenges.",
+	text: `Je suis une developpeuse fullstack spécialisée en React et NodeJS. \n
+	J'aime aussi raconter des blagues sur scène, jouer aux cartes et marcher dans la montagne. 
+	Je suis curieuse de nature et toujours à la recherche de nouveaux challenges.`,
 	h2: 'Je tape des lignes de code pour transformer des supers projets en applications web',
+	button: 'Contactez moi',
 }
 
 const Home = () => {
 	const language = useLanguage()
-
 	const content = language === 'EN' ? contentEN : contentFR
+	const txtLines = content.text.split('.')
+
 	return (
-		<div className="wrapper">
+		<div className="wrapper home">
 			<h3>{content.hello}</h3>
 			<h1 className="marion">Marion Saul</h1>
 			<h2>{content.h2}</h2>
-			<p>{content.text}</p>
+			{txtLines.map(line => (
+				<p>{line}.</p>
+			))}
+			<NavLink to="/contact" className="btnLink">
+				<button className="btn_contact">{content.button}</button>
+			</NavLink>
 		</div>
 	)
 }

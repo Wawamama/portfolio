@@ -5,6 +5,7 @@ export const lightTheme = {
 	toggleBorder: '#fff',
 	link: '#000000',
 	buttonColor: '#04009A',
+	bgContactBtn: '#EBFFFF',
 }
 
 export const darkTheme = {
@@ -14,4 +15,5 @@ export const darkTheme = {
 	toggleBorder: '#030222',
 	link: '#FFFFFF',
 	buttonColor: '#69DADB',
+	bgContactBtn: '#1A1A1B',
 }
