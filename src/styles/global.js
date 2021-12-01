@@ -111,5 +111,6 @@ export const GlobalStyles = createGlobalStyle`
   .chevron1, .chevron2 {
     color: ${({ theme }) => theme.textThird};
   }
+
   
 `

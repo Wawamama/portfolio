@@ -21,7 +21,7 @@ const projects = [
 		tech: `Front-end: React Native<br>
         Back-end: Node.js, MongoDB`,
 		link: `https://www.youtube.com/watch?v=oxXcCU_cMTU&ab_channel=Warion`,
-		img1: 'https://res.cloudinary.com/daxjdptqt/image/upload/v1638181314/samples/portfolio/vjf/VJF-mockup_pwsttz.png',
+		img1: 'https://res.cloudinary.com/daxjdptqt/image/upload/v1638398458/samples/portfolio/vjf/VJF-display_netal5.png',
 	},
 	{
 		id: uuidv4(),
@@ -38,7 +38,7 @@ const projects = [
 		title: 'MorningNews',
 		descEN: `Web application that displays current news in a selected language and allows the user to save them in a wishlist.`,
 		descFR: `Application web qui affiche les news actualisées selon la langue sélectionnée et permet de les sauvegarder dans une wishlist.`,
-		tech: `Front-end: React, Redux
+		tech: `Front-end: React, Redux<br>
         Back-end: Node.js, MongoDB`,
 		link: `https://github.com/Wawamama/morningNewsV2`,
 		img1: 'https://res.cloudinary.com/daxjdptqt/image/upload/v1638181314/samples/portfolio/morningNews/morning3_gykfpn.png',
@@ -50,7 +50,7 @@ const projects = [
 		descEN: `Website to buy tickets to space.
         I made this website as part of La Capsule’s hackathon in one day.`,
 		descFR: `Site internet pour acheter des tickets de train pour l'espace. J'ai créé ce site dans le cadre du Hackathon de La Capsule`,
-		tech: `Front-end: EJS
+		tech: `Front-end: EJS<br>
         Back-end: Node.js, MongoDB`,
 		link: `http://spacecapsule.herokuapp.com/`,
 		img1: 'https://res.cloudinary.com/daxjdptqt/image/upload/v1638181314/samples/portfolio/tickettac/tiktak1_g07y02.png',
@@ -61,7 +61,7 @@ const projects = [
 		title: 'BlackBoard',
 		descEN: `Dashboard for a fictionnal scooter shop. Allows management of orders and client messages.`,
 		descFR: `Tableau de bord pour un magasin de trotinettes (fictif). Permet de suivre les commandes et les messages des clients`,
-		tech: `Front-end: EJS
+		tech: `Front-end: EJS<br>
         Back-end: Node.js, MongoDB`,
 		link: `https://github.com/Wawamama/blackboard/tree/master`,
 		img1: 'https://res.cloudinary.com/daxjdptqt/image/upload/v1638181314/samples/portfolio/blackboard/blackboard2_l08izs.png',
@@ -73,7 +73,7 @@ const projects = [
 		title: 'FaceUp',
 		descEN: `Mobile application to take pictures and save them in a gallery. The AI recognizes faces and generates gender and age tags automatically.`,
 		descFR: `Application mobile qui permet de prendre une photo et de les présenter sous forme de galerie. Une IA reconnait les visages et génère des tags automatiquement`,
-		tech: `Front-end: EJS
+		tech: `Front-end: EJS<br>
         Back-end: Node.js, MongoDB`,
 		link: `https://github.com/Wawamama/faceupApp`,
 		img1: 'https://res.cloudinary.com/daxjdptqt/image/upload/v1638181314/samples/portfolio/faceup/faceup_yjpmzc.png',

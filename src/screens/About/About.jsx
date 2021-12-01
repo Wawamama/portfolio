@@ -33,6 +33,7 @@ const About = () => {
 	const language = useLanguage()
 	const content = language === 'EN' ? contentEN : contentFR
 	const txtLines = content.text.split('<br>')
+
 	const photo_url =
 		'https://res.cloudinary.com/daxjdptqt/image/upload/v1638292014/samples/portfolio/profilePic-smaller_pfgojh.png'
 
@@ -47,7 +48,7 @@ const About = () => {
 					))}
 				</div>
 				<div className="about_right">
-					<img src={photo_url} alt="photo smiling woman" />
+					<img src={photo_url} alt="smiling woman" />
 					<div
 						className="photo_bg"
 						style={{ backgroundColor: '#1597E5' }}

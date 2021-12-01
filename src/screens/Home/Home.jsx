@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom'
 import { useLanguage } from '../../contexts/language'
-import About from '../About/About'
 import './home.css'
 
 const contentEN = {
