@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import { useLanguage } from '../../contexts/language'
+import About from '../About/About'
 import './home.css'
 
 const contentEN = {
@@ -26,16 +27,18 @@ const Home = () => {
 	const txtLines = content.text.split('.')
 
 	return (
-		<div className="wrapper home">
-			<h3>{content.hello}</h3>
-			<h1 className="marion">Marion Saul</h1>
-			<h2>{content.h2}</h2>
-			{txtLines.map(line => (
-				<p>{line}.</p>
-			))}
-			<NavLink to="/contact" className="btnLink">
-				<button className="btn_contact">{content.button}</button>
-			</NavLink>
+		<div className="container">
+			<div className="wrapper home">
+				<h2>{content.hello}</h2>
+				<h1 className="marion">Marion Saul</h1>
+				<h2>{content.h2}</h2>
+				{txtLines.map(line => (
+					<p>{line}.</p>
+				))}
+				<NavLink to="/contact" className="btnLink">
+					<button className="btn_contact">{content.button}</button>
+				</NavLink>
+			</div>
 		</div>
 	)
 }

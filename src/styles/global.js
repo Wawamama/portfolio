@@ -27,6 +27,7 @@ export const GlobalStyles = createGlobalStyle`
    max-width: 1200px;
    margin: auto;
    padding-top: 5rem;
+   margin-bottom: 5rem;
   }
   footer {
     position: absolute;
@@ -64,7 +65,7 @@ export const GlobalStyles = createGlobalStyle`
   a:hover {
     color: ${({ theme }) => theme.text};
   }
-  h1.marion {
+  h1 {
     font-size: 4rem;
     margin: 0.5rem 0;
     background: #1597E5;
@@ -81,6 +82,12 @@ export const GlobalStyles = createGlobalStyle`
   h2 {
     font-size: 2.2rem;
     color: ${({ theme }) => theme.textSecondary};
+  }
+  .about h2 {
+    color: ${({ theme }) => theme.textThird};
+  }
+  .content-text {
+    color: ${({ theme }) => theme.contentTxt};
   }
   .toggleLangBtn {
     position: absolute;
@@ -101,4 +108,8 @@ export const GlobalStyles = createGlobalStyle`
   input[type='checkbox']:checked + .switch_slider {
     background-color:${({ theme }) => theme.text};
   }
+  .chevron1, .chevron2 {
+    color: ${({ theme }) => theme.textThird};
+  }
+  
 `
