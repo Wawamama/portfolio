@@ -5,10 +5,6 @@ import { useLanguage } from '../../contexts/language'
 import projectsInfo from '../../assets/data/projects'
 import Card from './Card'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
-
 import './work.css'
 import 'swiper/swiper-bundle.min.css'
 
