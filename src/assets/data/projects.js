@@ -7,7 +7,7 @@ const projects = [
 		descEN: `Web application to get the latest movie releases and add them to a wishlist. 
         This was my first React project.`,
 		descFR: `Application web pour accéder aux films les plus populaires et les ajouter à une liste d'envies.
-        Il s'\agit de mon premier projet React.`,
+        Il s'agit de mon premier projet React.`,
 		tech: `Front-end: React<br>
         Back-end: Node.js, MongoDB`,
 		link: `#`,
@@ -79,3 +79,5 @@ const projects = [
 		img1: 'https://res.cloudinary.com/daxjdptqt/image/upload/v1638181314/samples/portfolio/faceup/faceup_yjpmzc.png',
 	},
 ]
+
+export default projects
