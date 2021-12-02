@@ -22,6 +22,9 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Raleway', sans-serif;
     transition: all 0.25s linear;
   }
+  textarea:focus {
+    outline: none;
+  }
   .wrapper {
    width: 80%;
    max-width: 1200px;
@@ -114,6 +117,24 @@ export const GlobalStyles = createGlobalStyle`
   figure.project_fig h2 {
     background-color:${({ theme }) => theme.bgContactBtn};
     color: ${({ theme }) => theme.text};
+  }
+  .social_icon {
+    color: ${({ theme }) => theme.text};
+  }
+  .socials a {
+    color: ${({ theme }) => theme.text};
+  }
+  .socials a:hover {
+    color: ${({ theme }) => theme.link};
+  }
+  .form-text textarea {
+    border-color: ${({ theme }) => theme.text};
+    background-color: ${({ theme }) => theme.body};
+    color: ${({ theme }) => theme.text};
+  }
+  .contact input[type='text'] {
+    border-bottom: solid 1px;
+    border-color: ${({ theme }) => theme.text};
   }
 
   
