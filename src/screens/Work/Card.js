@@ -9,7 +9,15 @@ const Card = props => {
 
 	return (
 		<div className="card">
-			<img src={project.img1} alt="" />
+			<a href={project.link} target="_blank" rel="noreferrer">
+				<figure class="project_fig">
+					<img src={project.img1} alt="" />
+					<figcaption>
+						<h2>{project.title}</h2>
+					</figcaption>
+				</figure>
+			</a>
+
 			<h3>{project.title}</h3>
 			<p>{language === 'EN' ? project.descEN : project.descFR}</p>
 			{techLines.map(line => (

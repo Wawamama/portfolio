@@ -52,6 +52,7 @@
 
 .about_right:hover {
 	-webkit-filter: hue-rotate(325deg);
+	-moz-filter: hue-rotate(325deg);
 	filter: hue-rotate(325deg);
 }
 

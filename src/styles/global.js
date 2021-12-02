@@ -111,6 +111,10 @@ export const GlobalStyles = createGlobalStyle`
   .chevron1, .chevron2 {
     color: ${({ theme }) => theme.textThird};
   }
+  figure.project_fig h2 {
+    background-color:${({ theme }) => theme.bgContactBtn};
+    color: ${({ theme }) => theme.text};
+  }
 
   
 `
