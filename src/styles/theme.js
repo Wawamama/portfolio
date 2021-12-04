@@ -18,6 +18,6 @@ export const darkTheme = {
 	toggleBorder: '#030222',
 	link: '#FFFFFF',
 	buttonColor: '#69DADB',
-	bgContactBtn: '#1A1A1B',
+	bgContactBtn: '#030222',
 	contentTxt: '#FFFFFF',
 }

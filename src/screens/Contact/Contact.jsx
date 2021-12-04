@@ -1,4 +1,6 @@
+import { useRef, useState } from 'react'
 import parse from 'html-react-parser'
+import emailjs from 'emailjs-com'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -27,7 +29,14 @@ const contentFR = {
 
 const Contact = () => {
 	const language = useLanguage()
+	const form = useRef()
+	const [msgSend, setMsgSend] = useState(false)
+
 	const content = language === 'EN' ? contentEN : contentFR
+	const successMessage =
+		language === 'EN'
+			? "Thank you, you're message is in my mailbox! I will come back to you ASAP :)"
+			: 'Merci, votre message est dans ma boite mail ! Je reviens vers vous rapidement :)'
 
 	const nameLabel = language === 'EN' ? 'Your name' : 'Votre nom'
 	const emailLabel = language === 'EN' ? 'Your email' : 'Votre email'
@@ -52,6 +61,24 @@ const Contact = () => {
 			.join('')
 	)
 
+	const sendEmail = async e => {
+		e.preventDefault()
+		try {
+			emailjs.sendForm(
+				process.env.REACT_APP_EMAIL_SERVICE_ID,
+				process.env.REACT_APP_EMAIL_TEMPLATE_ID,
+				form.current,
+				process.env.REACT_APP_EMAIL_USER_ID
+			)
+			setMsgSend(true)
+			console.log('success in async')
+		} catch (err) {
+			console.log('something  went wrong')
+		}
+	}
+
+	console.log('dot env var...', process.env.REACT_APP_EMAIL_TOKEN)
+
 	return (
 		<div className="wrapper contact">
 			<div className="contact_left">
@@ -62,13 +89,21 @@ const Contact = () => {
 						<p className="content-text">{p}</p>
 					))}
 					<div className="socials">
-						<a href="https://github.com/Wawamama">
+						<a
+							href="https://github.com/Wawamama"
+							target="_blank"
+							rel="noreferrer"
+						>
 							<FontAwesomeIcon icon={faGithub} className="social_icon" />
 							<span>
 								{language === 'EN' ? 'Find me on' : 'Je suis aussi sur'} GitHub
 							</span>
 						</a>
-						<a href="https://www.linkedin.com/in/marionsaul/">
+						<a
+							href="https://www.linkedin.com/in/marionsaul/"
+							target="_blank"
+							rel="noreferrer"
+						>
 							<FontAwesomeIcon icon={faLinkedin} className="social_icon" />
 							<span style={{ marginLeft: '4px' }}>
 								{language === 'EN' ? 'And' : 'Et'} LinkedIn
@@ -79,11 +114,11 @@ const Contact = () => {
 			</div>
 			<div className="contact_right">
 				<p
-					style={{ fontSize: '1.3rem', fontWeight: 600, lineHeight: '1.5rem' }}
+					style={{ fontSize: '1.2rem', fontWeight: 600, lineHeight: '1.5rem' }}
 				>
 					{content.form}
 				</p>
-				<form>
+				<form ref={form} onSubmit={sendEmail}>
 					<div class="form-field">
 						<input type="text" name="username" required />
 						<label>{nameSpans}</label>
@@ -101,6 +136,7 @@ const Contact = () => {
 					<button>
 						{language === 'EN' ? 'Send to Marion' : 'Envoyer à Marion'}
 					</button>
+					{msgSend && <p style={{ fontWeight: 600 }}>{successMessage}</p>}
 				</form>
 			</div>
 		</div>
