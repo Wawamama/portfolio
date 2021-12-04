@@ -28,11 +28,11 @@ const Home = () => {
 	return (
 		<div className="container">
 			<div className="wrapper home">
-				<h2>{content.hello}</h2>
+				<h2 className="hello">{content.hello}</h2>
 				<h1 className="marion">Marion Saul</h1>
-				<h2>{content.h2}</h2>
+				<h2 style={{ marginBottom: '3rem' }}>{content.h2}</h2>
 				{txtLines.map(line => (
-					<p>{line}.</p>
+					<p>{line}</p>
 				))}
 				<NavLink to="/contact" className="btnLink">
 					<button className="btn_contact">{content.button}</button>

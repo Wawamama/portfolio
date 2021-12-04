@@ -79,12 +79,38 @@ export const GlobalStyles = createGlobalStyle`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  h1.marion {
+    font-size: 6vw;
+    margin-bottom: 1rem;
+    background: linear-gradient(-60deg, #1597E5 20%, #69DADB 40%, #1597E5 60%, #69DADB 80%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    animation: shine 5s ease-in-out infinite;
+  }
+  @keyframes shine {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
   h3 {
     color: ${({ theme }) => theme.text};
   }
   h2 {
     font-size: 2.2rem;
     color: ${({ theme }) => theme.textSecondary};
+  }
+  h2.hello {
+   
+    margin: 0;
   }
   .about h2 {
     color: ${({ theme }) => theme.textThird};
