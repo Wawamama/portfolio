@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Helmet } from 'react-helmet'
 import { ThemeProvider } from 'styled-components'
 import { lightTheme, darkTheme } from './styles/theme'
 import { GlobalStyles } from './styles/global'
@@ -27,6 +28,9 @@ function App() {
 		<ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
 			<LanguageProvider>
 				<GlobalStyles />
+				<Helmet>
+					<title>Marion Saul - fullstack web developer</title>
+				</Helmet>
 				<Router>
 					<TopBar theme={theme} />
 					<Routes>
