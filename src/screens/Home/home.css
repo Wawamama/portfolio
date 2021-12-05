@@ -11,3 +11,13 @@
 .home button {
 	margin-top: 3rem;
 }
+@media (min-width: 30em) {
+	h1.marion {
+		font-size: 12vw;
+	}
+}
+@media (min-width: 40em) {
+	h1.marion {
+		font-size: 6vw;
+	}
+}

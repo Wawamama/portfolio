@@ -80,7 +80,7 @@ export const GlobalStyles = createGlobalStyle`
     -webkit-text-fill-color: transparent;
   }
   h1.marion {
-    font-size: 6vw;
+    
     margin-bottom: 1rem;
     background: linear-gradient(-60deg, #1597E5 20%, #69DADB 40%, #1597E5 60%, #69DADB 80%);
     background-size: 200% auto;
