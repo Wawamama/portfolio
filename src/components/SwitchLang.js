@@ -1,4 +1,3 @@
-import react from 'react'
 import { useLanguage, useLanguageUpdate } from '../contexts/language'
 
 const SwitchLang = () => {
