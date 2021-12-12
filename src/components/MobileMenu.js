@@ -1,15 +1,13 @@
 import { NavLink } from 'react-router-dom'
-
 import { useLanguage } from '../contexts/language'
 import './topbar.css'
 import pdf from './../assets/MarionSaul-FullstackDevelopper.pdf'
 
-const NavMenu = ({ theme, show }) => {
+const MobileMenu = ({ theme }) => {
 	const lang = useLanguage()
-
 	return (
-		<nav className={show ? 'open' : ''}>
-			<ul>
+		<nav className="mobile">
+			<ul className="mobile">
 				<li>
 					<NavLink to="/about">{lang === 'EN' ? 'about' : 'a propos'}</NavLink>
 				</li>
@@ -38,4 +36,4 @@ const NavMenu = ({ theme, show }) => {
 	)
 }
 
-export default NavMenu
+export default MobileMenu

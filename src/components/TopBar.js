@@ -1,8 +1,17 @@
+import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import NavMenu from './NavMenu'
 import './topbar.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
 const TopBar = ({ theme }) => {
+	const [menuOn, setMenuOn] = useState(false)
+
+	const showMobileMenu = () => {
+		setMenuOn(!menuOn)
+	}
 	return (
 		<header>
 			<div className="logo">
@@ -25,7 +34,21 @@ const TopBar = ({ theme }) => {
 					</svg>
 				</NavLink>
 			</div>
-			<NavMenu theme={theme} />
+			{menuOn ? (
+				<FontAwesomeIcon
+					className="hamburger"
+					icon={faTimes}
+					onClick={showMobileMenu}
+				/>
+			) : (
+				<FontAwesomeIcon
+					className="hamburger"
+					icon={faBars}
+					onClick={showMobileMenu}
+				/>
+			)}
+
+			<NavMenu theme={theme} show={menuOn} />
 		</header>
 	)
 }

@@ -26,3 +26,43 @@ ul {
 li {
 	padding: 0.5rem;
 }
+.hamburger {
+	display: none;
+}
+
+@media (max-width: 550px) {
+	header {
+		padding: 0;
+	}
+	nav {
+		height: 100vh;
+		width: 100vh;
+		padding-top: 5rem;
+		background-color: #1597e5;
+		transform: translateX(100vw);
+		transition: 0.5s linear;
+	}
+	nav.open {
+		transform: translateX(0);
+	}
+	ul {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.3rem;
+	}
+	.logo {
+		align-self: start;
+		padding: 1rem;
+	}
+	.hamburger {
+		display: block;
+		position: fixed;
+		top: 2rem;
+		right: 1rem;
+		font-size: 2rem;
+		z-index: 10;
+	}
+}

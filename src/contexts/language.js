@@ -15,7 +15,6 @@ export const LanguageProvider = ({ children }) => {
 	const defaultLanguage = window.localStorage.getItem('lang')
 	const [userLanguage, setUserLanguage] = useState(defaultLanguage || 'EN')
 
-	console.log('language: ', defaultLanguage)
 	useEffect(() => {
 		localStorage.setItem('lang', userLanguage)
 	}, [userLanguage])
