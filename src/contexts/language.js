@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react'
+import React, { createContext, useContext, useState, useEffect } from 'react'
 
 export const LanguageContext = createContext()
 export const LanguageUpdateContext = createContext()
@@ -12,8 +12,13 @@ export function useLanguageUpdate() {
 }
 
 export const LanguageProvider = ({ children }) => {
-	const defaultLanguage = window.localStorage.getItem('rcml-lang')
+	const defaultLanguage = window.localStorage.getItem('lang')
 	const [userLanguage, setUserLanguage] = useState(defaultLanguage || 'EN')
+
+	console.log('language: ', defaultLanguage)
+	useEffect(() => {
+		localStorage.setItem('lang', userLanguage)
+	}, [userLanguage])
 
 	const toggleLanguage = () => {
 		if (userLanguage === 'EN') {
