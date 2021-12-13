@@ -3,18 +3,6 @@ import { v4 as uuidv4 } from 'uuid'
 const projects = [
 	{
 		id: uuidv4(),
-		title: 'MyMoviz',
-		descEN: `Web application to get the latest movie releases and add them to a wishlist. 
-        This was my first React project.`,
-		descFR: `Application web pour accéder aux films les plus populaires et les ajouter à une liste d'envies.
-        Il s'agit de mon premier projet React.`,
-		tech: `Front-end: React<br>
-        Back-end: Node.js, MongoDB`,
-		link: `#`,
-		img1: 'https://res.cloudinary.com/daxjdptqt/image/upload/v1638181314/samples/portfolio/mymoviz/mymoviz_uzkk7g.png',
-	},
-	{
-		id: uuidv4(),
 		title: "Vite J'ai Faim",
 		descEN: `Mobile application to order a surprise meal! I imagined this app and built it as a group project for my graduation`,
 		descFR: `Application mobile pour commander un repas surprise ! J'ai proposé cette appli comme projet de fin de formation et nous l'avons développé en équipe`,
@@ -35,17 +23,6 @@ const projects = [
 	},
 	{
 		id: uuidv4(),
-		title: 'MorningNews',
-		descEN: `Web application that displays current news in a selected language and allows the user to save them in a wishlist.`,
-		descFR: `Application web qui affiche les news actualisées selon la langue sélectionnée et permet de les sauvegarder dans une wishlist.`,
-		tech: `Front-end: React, Redux<br>
-        Back-end: Node.js, MongoDB`,
-		link: `https://github.com/Wawamama/morningNewsV2`,
-		img1: 'https://res.cloudinary.com/daxjdptqt/image/upload/v1638181314/samples/portfolio/morningNews/morning3_gykfpn.png',
-		img2: 'https://res.cloudinary.com/daxjdptqt/image/upload/v1638181313/samples/portfolio/morningNews/morning1_ul0gfg.png',
-	},
-	{
-		id: uuidv4(),
 		title: 'TicketTac',
 		descEN: `Website to buy tickets to space.
         I made this website as part of La Capsule’s hackathon in one day.`,
@@ -56,6 +33,30 @@ const projects = [
 		img1: 'https://res.cloudinary.com/daxjdptqt/image/upload/v1638181314/samples/portfolio/tickettac/tiktak1_g07y02.png',
 		img2: 'https://res.cloudinary.com/daxjdptqt/image/upload/v1638181313/samples/portfolio/tickettac/tiktak3_ebl72y.png',
 	},
+	{
+		id: uuidv4(),
+		title: 'MyMoviz',
+		descEN: `Web application to get the latest movie releases and add them to a wishlist. 
+        This was my first React project.`,
+		descFR: `Application web pour accéder aux films les plus populaires et les ajouter à une liste d'envies.
+        Il s'agit de mon premier projet React.`,
+		tech: `Front-end: React<br>
+        Back-end: Node.js, MongoDB`,
+		link: `#`,
+		img1: 'https://res.cloudinary.com/daxjdptqt/image/upload/v1638181314/samples/portfolio/mymoviz/mymoviz_uzkk7g.png',
+	},
+	{
+		id: uuidv4(),
+		title: 'MorningNews',
+		descEN: `Web application that displays current news in a selected language and allows the user to save them in a wishlist.`,
+		descFR: `Application web qui affiche les news actualisées selon la langue sélectionnée et permet de les sauvegarder dans une wishlist.`,
+		tech: `Front-end: React, Redux<br>
+        Back-end: Node.js, MongoDB`,
+		link: `https://github.com/Wawamama/morningNewsV2`,
+		img1: 'https://res.cloudinary.com/daxjdptqt/image/upload/v1638181314/samples/portfolio/morningNews/morning3_gykfpn.png',
+		img2: 'https://res.cloudinary.com/daxjdptqt/image/upload/v1638181313/samples/portfolio/morningNews/morning1_ul0gfg.png',
+	},
+
 	{
 		id: uuidv4(),
 		title: 'BlackBoard',
