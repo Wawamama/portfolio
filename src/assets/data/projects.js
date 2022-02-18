@@ -3,6 +3,15 @@ import { v4 as uuidv4 } from 'uuid'
 const projects = [
 	{
 		id: uuidv4(),
+		title: 'Studio S',
+		descEN: `Internship project: Corporate website for a video studio based in Paris.`,
+		descFR: `Site vitrine pour un studio vidéo spécialisé dans les vidéos d'entreprises situé à Paris.`,
+		tech: `Tech: React, GatsbyJS, GraphQL`,
+		link: `https://mystifying-goodall-afaf01.netlify.app/`,
+		img1: 'https://res.cloudinary.com/daxjdptqt/image/upload/v1645203857/samples/portfolio/studio-s/home_xeejri.png',
+	},
+	{
+		id: uuidv4(),
 		title: "Vite J'ai Faim",
 		descEN: `Mobile application to order a surprise meal! I imagined this app and built it as a group project for my graduation`,
 		descFR: `Application mobile pour commander un repas surprise ! J'ai proposé cette appli comme projet de fin de formation et nous l'avons développé en équipe`,
@@ -42,7 +51,7 @@ const projects = [
         Il s'agit de mon premier projet React.`,
 		tech: `Front-end: React<br>
         Back-end: Node.js, MongoDB`,
-		link: `#`,
+		link: '',
 		img1: 'https://res.cloudinary.com/daxjdptqt/image/upload/v1638181314/samples/portfolio/mymoviz/mymoviz_uzkk7g.png',
 	},
 	{
