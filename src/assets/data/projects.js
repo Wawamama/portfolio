@@ -3,9 +3,33 @@ import { v4 as uuidv4 } from 'uuid'
 const projects = [
 	{
 		id: uuidv4(),
+		title: 'Phoneflow',
+		statsEN: '7500+ users',
+		statsFR: '7500+ utilisateurs',
+		descEN:
+			'A mobile app to manage your CMS or e-commerce webflow site from anywhere. I worked on this app during my internship at ComDesLezards and was in charge of developping the e-commerce features, implementing subscriptions for the new business model and optimizing the app.',
+		descFR: `Application mobile pour gérer son site CMS ou e-commerce webflow. J'ai travaillé sur cette application pendant mon stage chez ComDesLezards où j'étais chargée de développer les fonctionnalités e-commerce, d'implémenter le système d'abonnements pour le nouveau business model and d'optimiser l'application. `,
+		tech: 'Tech: React Native, Firebase, Revenue Cat',
+		link: 'https://apps.apple.com/us/app/phoneflow-webflow-cms-client/id1528892928?platform=iphone',
+		img1: 'https://res.cloudinary.com/daxjdptqt/image/upload/v1656496549/samples/portfolio/phoneflow/Phoneflow-screens_obuixb.png',
+	},
+	{
+		id: uuidv4(),
+		title: 'VeloBleu Nice',
+		statsEN: '4000+ unique users daily',
+		statsFR: '4000+ utilisateurs uniques par jour',
+		descEN:
+			'The essential assistant for cycling in the city of Nice. I worked on this app during my internship at ComDesLezards and was in charge of getting and displaying data on the map such as bicycle paths, water points and free floating electric bikes.',
+		descFR: `L'assistant mobile pour le vélo à Nice. J'ai travaillé sur cette application pendant mon stage chez ComDesLezards où j'étais en charge de la récupération et du traitement des données permettant l'affichage sur la carte des e-vélo bleus (vélos électriques en free floating), des pistes cyclables et des points d'eau.`,
+		tech: 'Tech: React Native, Typescript, Firebase',
+		link: 'https://apps.apple.com/app/id1566088958',
+		img1: 'https://res.cloudinary.com/daxjdptqt/image/upload/v1656499019/samples/portfolio/velobleu/Velobleu-portfolio_szqooq.png',
+	},
+	{
+		id: uuidv4(),
 		title: 'Studio S',
-		descEN: `Internship project: Corporate website for a video studio based in Paris.`,
-		descFR: `Site vitrine pour un studio vidéo spécialisé dans les vidéos d'entreprises situé à Paris.`,
+		descEN: `Corporate website for a video studio based in Paris. The company had a Wordpress website that I redesigned and rebuilt using modern technologies.`,
+		descFR: `Site vitrine pour un studio vidéo spécialisé dans les vidéos d'entreprises situé à Paris. Lors de cette mission j'ai été en charge de la refonte du site Wordpress vers un site plus moderne et plus attirant.`,
 		tech: `Tech: React, GatsbyJS, GraphQL`,
 		link: `https://mystifying-goodall-afaf01.netlify.app/`,
 		img1: 'https://res.cloudinary.com/daxjdptqt/image/upload/v1645203857/samples/portfolio/studio-s/home_xeejri.png',
