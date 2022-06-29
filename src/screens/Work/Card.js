@@ -1,4 +1,3 @@
-import projects from '../../assets/data/projects'
 import { useLanguage } from '../../contexts/language'
 
 const Card = props => {
